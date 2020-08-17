@@ -1,5 +1,5 @@
 {% set name = "flair" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6" %}
 
 package:
   name: python-flair
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/flairNLP/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 37a81c9792d950be4ac06cafcec42f389a7171bcb95b340d29ae6ce745302efe
+  sha256: cf445bbbb485faa3e49a3e46b6580aa84b18640288d9ce8e9dacc7a9266e27c6
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [not linux or py<36]
+  skip: true  # [not linux or py<36]
 
 requirements:
   host:
@@ -50,7 +50,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A very simple framework for state-of-the-art NLP."
+  summary: A very simple framework for state-of-the-art NLP.
   doc_url: https://pypi.org/project/flair/
   dev_url: https://github.com/flairNLP/flair
 
