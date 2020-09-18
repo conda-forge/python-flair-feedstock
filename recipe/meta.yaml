@@ -37,6 +37,9 @@ requirements:
     - tabulate
     - langdetect
     - sentencepiece
+    - ftfy
+    - lxml
+    - gdown
     - dataclasses  # [py36]
 
 test:
