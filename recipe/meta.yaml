@@ -1,6 +1,6 @@
 {% set name = "flair" %}
 {% set version = "0.6" %}
- 
+
 package:
   name: python-flair
   version: {{ version }}
