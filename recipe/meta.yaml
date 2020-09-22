@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [not linux or py<36]
+  skip: true  # [not linux or py36 or py37]
 
 requirements:
   host:
@@ -22,7 +22,6 @@ requirements:
     - python
     - python-dateutil
     - pytorch
-    - cffi >=1.14.3
     - gensim >=3.4.0
     - pytest >=5.3.2
     - tqdm >=4.26.0
