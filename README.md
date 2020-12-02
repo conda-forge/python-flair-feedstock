@@ -5,11 +5,13 @@ Home: https://github.com/flairNLP/flair
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-flair-feedstock/blob/master/LICENSE.txt)
 
 Summary: A very simple framework for state-of-the-art NLP.
 
+Development: https://github.com/flairNLP/flair
 
+Documentation: https://pypi.org/project/flair/
 
 Current build status
 ====================
