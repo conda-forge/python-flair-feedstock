@@ -12,14 +12,14 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [not linux]
+  skip: true  # [not linux or py<36 or py>37]
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
+    - python
     - python-dateutil
     - pytorch
     - gensim >=3.4.0
