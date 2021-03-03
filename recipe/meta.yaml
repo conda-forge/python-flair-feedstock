@@ -1,6 +1,7 @@
 {% set name = "flair" %}
 {% set version = "0.7" %}
 
+
 package:
   name: python-flair
   version: {{ version }}
@@ -11,8 +12,8 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [not linux or py<36 or py>37]
 
 requirements:
   host:
