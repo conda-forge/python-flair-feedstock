@@ -49,6 +49,10 @@ test:
     - flair
     - flair.data
     - flair.models
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/flairNLP/flair
