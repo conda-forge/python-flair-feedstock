@@ -1,5 +1,6 @@
 {% set name = "flair" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
+
 
 package:
   name: python-flair
@@ -7,46 +8,55 @@ package:
 
 source:
   url: https://github.com/flairNLP/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 5d6cba2deed209c59534f2a00cbbde4de151c9d867f093b9f96b191d88454245
+  sha256: 00bb0561e8095eb03d7d4d49bc9658cdc065e3b383782e44914b3f421b6ac3bd
 
 build:
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [not linux or py<36 or py>37]
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
-    - python-dateutil
-    - pytorch
-    - gensim >=3.4.0
-    - pytest >=5.3.2
-    - tqdm >=4.26.0
-    - segtok
-    - matplotlib-base >=2.2.3
-    - mpld3
-    - scikit-learn >=0.21.3
-    - sqlitedict >=1.6.0
+    - bpemb >=0.3.2
     - deprecated >=1.2.4
-    - hyperopt >=0.1.1
-    - transformers >=3.1
-    - bpemb
-    - tabulate
-    - langdetect
-    - sentencepiece
     - ftfy
+    - gdown >=3.12.2
+    - gensim <=3.8.3,>=3.4.0
+    - huggingface_hub
+    - hyperopt >=0.1.1
+    - janome
+    - konoha <5.0.0,>=4.0.0
+    - langdetect
     - lxml
-    - gdown
-    - dataclasses  # [py36]
+    - matplotlib-base >=2.2.3
+    - mpld3 >=0.3
+    - numpy
+    - python >=3.6
+    - python-dateutil >=2.6.1
+    - regex
+    - scikit-learn >=0.21.3
+    - segtok >=1.5.7
+    - sentencepiece >=0.1.95
+    - sqlitedict >=1.6.0
+    - tabulate
+    - pytorch >=1.5.0
+    - tqdm >=4.26.0
+    - transformers >=4.0.0
 
 test:
   imports:
     - flair
     - flair.data
     - flair.models
+  commands:
+    - pytest
+  requires:
+    - pytest
+  source_files:
+    - tests
 
 about:
   home: https://github.com/flairNLP/flair
@@ -62,3 +72,4 @@ extra:
     - oblute
     - rluria14
     - ndmaxar
+    - BastianZim
