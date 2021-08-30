@@ -21,6 +21,7 @@ requirements:
     - python >=3.6
   run:
     - bpemb >=0.3.2
+    - conllu >=4.0
     - deprecated >=1.2.4
     - ftfy
     - gdown >=3.12.2
@@ -32,8 +33,8 @@ requirements:
     - langdetect
     - lxml
     - matplotlib-base >=2.2.3
+    - more-itertools ~=8.8.0
     - mpld3 >=0.3
-    - numpy
     - python >=3.6
     - python-dateutil >=2.6.1
     - regex
@@ -42,9 +43,10 @@ requirements:
     - sentencepiece >=0.1.95
     - sqlitedict >=1.6.0
     - tabulate
-    - pytorch >=1.5.0
+    - pytorch !=1.8,>=1.5.0
     - tqdm >=4.26.0
     - transformers >=4.0.0
+    - wikipedia-api
 
 test:
   imports:
