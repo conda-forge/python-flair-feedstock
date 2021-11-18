@@ -1,5 +1,5 @@
 {% set name = "flair" %}
-{% set version = "0.9" %}
+{% set version = "0.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/flairNLP/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 61b8c168e3899a4a9d7552ef940ceb01a73308323ab7da5d9d926e9e9eb36255
+  sha256: 274151833e33e3e7409370da6af3a888cf42586264aaef3fbd32bf770168fc2f
 
 build:
   number: 0
@@ -25,9 +25,8 @@ requirements:
     - deprecated >=1.2.4
     - ftfy
     - gdown >=3.12.2
-    - gensim <=3.8.3,>=3.4.0
+    - gensim >=3.4.0
     - huggingface_hub
-    - hyperopt >=0.1.1
     - janome
     - konoha <5.0.0,>=4.0.0
     - langdetect
