@@ -1,5 +1,5 @@
 {% set name = "flair" %}
-{% set version = "0.11" %}
+{% set version = "0.11.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/flairNLP/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 89bb85ea4b725b398fa59524115d433063152aa2d7efcc5ea0b5b0f04a63c000
+  sha256: 003dfa66df64f34d231eae895fa97137ebf8b5a4ffdda514a8c9898d15b45757
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - langdetect
     - lxml
     - matplotlib-base >=2.2.3
-    - more-itertools ~=8.8.0
+    - more-itertools
     - mpld3 >=0.3
     - pptree
     - python >=3.6
