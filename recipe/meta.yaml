@@ -18,35 +18,38 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - bpemb >=0.3.2
+    - boto3
     - conllu >=4.0
     - deprecated >=1.2.4
     - ftfy
     - gdown ==4.4.0
-    - gensim >=3.4.0
-    - huggingface_hub
+    - gensim >=3.8.0
+    - huggingface_hub ==0.10.0
     - hyperopt >=0.2.7
     - janome
-    - konoha <5.0.0,>=4.0.0
     - langdetect
     - lxml
     - matplotlib-base >=2.2.3
     - more-itertools
     - mpld3 >=0.3
     - pptree
-    - python >=3.6
+    - protobuf
+    - python >=3.7
     - python-dateutil >=2.6.1
+    - pytorch_revgrad
     - regex
     - scikit-learn >=0.21.3
     - segtok >=1.5.7
-    - sentencepiece >=0.1.95
+    - sentencepiece
     - sqlitedict >=1.6.0
     - tabulate
     - pytorch !=1.8,>=1.5.0
     - tqdm >=4.26.0
     - transformers >=4.0.0
+    - transformer-smaller-training-vocab U>=0.2.0
     - wikipedia-api
 
 test:
