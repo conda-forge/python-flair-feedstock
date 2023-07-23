@@ -27,7 +27,7 @@ requirements:
     - ftfy
     - gdown ==4.4.0
     - gensim >=3.8.0
-    - huggingface_hub ==0.10.0
+    - huggingface_hub >=0.10.0
     - hyperopt >=0.2.7
     - janome
     - langdetect
@@ -49,7 +49,7 @@ requirements:
     - pytorch !=1.8,>=1.5.0
     - tqdm >=4.26.0
     - transformers >=4.0.0
-    - transformer-smaller-training-vocab >=0.2.0
+    - transformer-smaller-training-vocab >=0.2.1
     - wikipedia-api
     - konoha <5.0.0,>=4.0.0
 
