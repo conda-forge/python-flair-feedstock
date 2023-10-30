@@ -18,40 +18,38 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - bpemb >=0.3.2
-    - boto3
-    - conllu >=4.0
-    - deprecated >=1.2.4
-    - ftfy
-    - gdown ==4.4.0
-    - gensim >=3.8.0
-    - huggingface_hub >=0.10.0
-    - hyperopt >=0.2.7
-    - janome
-    - langdetect
-    - lxml
-    - matplotlib-base >=2.2.3
-    - more-itertools
-    - mpld3 >=0.3
-    - pptree
-    - protobuf
-    - python >=3.7
-    - python-dateutil >=2.6.1
-    - pytorch_revgrad
-    - regex
-    - scikit-learn >=0.21.3
-    - segtok >=1.5.7
-    - sentencepiece
-    - sqlitedict >=1.6.0
-    - tabulate
-    - pytorch !=1.8,>=1.5.0
-    - tqdm >=4.26.0
-    - transformers >=4.0.0
-    - transformer-smaller-training-vocab >=0.2.1
-    - wikipedia-api
-    - konoha <5.0.0,>=4.0.0
+  - python >=3.8
+  - boto3 >=1.20.27
+  - bpemb >=0.3.2
+  - deprecated >=1.2.13
+  - ftfy >=6.1.0
+  - gdown >=4.4.0
+  - gensim >=4.2.0
+  - huggingface-hub >=0.10.0
+  - janome >=0.4.2
+  - langdetect >=1.0.9
+  - lxml >=4.8.0
+  - matplotlib >=2.2.3
+  - more-itertools >=8.13.0
+  - mpld3 >=0.3
+  - pptree >=3.1
+  - python-dateutil >=2.8.2
+  - pytorch_revgrad >=0.2.0
+  - regex >=2022.1.18
+  - scikit-learn >=1.0.2
+  - segtok >=1.5.11
+  - sqlitedict >=2.0.0
+  - tabulate >=0.8.10
+  - pytorch >=1.5.0,!=1.8
+  - tqdm >=4.63.0
+  - transformer-smaller-training-vocab >=0.2.3
+  - transformers >=4.18.0,<5.0.0
+  - sentencepiece
+  - urllib3 >=1.0.0
+  - wikipedia-api >=0.5.7
+  - semver <4.0.0,>=3.0.0
 
 test:
   imports:
