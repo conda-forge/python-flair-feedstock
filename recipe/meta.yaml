@@ -1,5 +1,5 @@
 {% set name = "flair" %}
-{% set version = "0.12.2" %}
+{% set version = "0.13.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/flairNLP/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f28d9a369c07f66a7b85e0359a0395470abf1c572dae01516cdf2bb5b48057d7
+  sha256: def482184dec116345df37cd0dfcda25d835f3c3d8bc2e0981e02e567d60dccb
 
 build:
   number: 0
