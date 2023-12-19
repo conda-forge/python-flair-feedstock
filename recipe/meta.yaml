@@ -50,6 +50,7 @@ requirements:
   - urllib3 >=1.0.0
   - wikipedia-api >=0.5.7
   - semver <4.0.0,>=3.0.0
+  - conllu >=4.0
 
 test:
   imports:
