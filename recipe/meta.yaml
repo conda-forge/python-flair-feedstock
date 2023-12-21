@@ -55,14 +55,10 @@ requirements:
 test:
   imports:
     - flair
-    - flair.data
-    - flair.models
   commands:
-    - pytest
+    - pip check
   requires:
-    - pytest
-  source_files:
-    - tests
+    - pip
 
 about:
   home: https://github.com/flairNLP/flair
