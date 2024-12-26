@@ -11,16 +11,16 @@ source:
   sha256: def482184dec116345df37cd0dfcda25d835f3c3d8bc2e0981e02e567d60dccb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - boto3 >=1.20.27
     - bpemb >=0.3.2
     - deprecated >=1.2.13
@@ -59,6 +59,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/flairNLP/flair
